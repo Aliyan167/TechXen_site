@@ -1,6 +1,12 @@
 from django.urls import path
 
-app_name = "project"
-urlpatterns = [
+from .views import (
+    IndexView
+)
 
-]
+app_name = "project"
+
+urlpatterns = [
+    path("project/", IndexView.as_view(), name="project"),
+    ]
+

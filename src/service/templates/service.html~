@@ -320,7 +320,7 @@
                         <div class="icon">
                             <img src="{% static 'assets/img/icons/service-page-icon1.png' %}" alt="">
                         </div>
-                        <a href="#" class="arrow"><i
+                        <a href="{% url 'service:service_detail' service.pk %}" class="arrow"><i
                                 class="fa-solid fa-arrow-right"></i></a>
                         <div class="heading1">
                             <h4><a href="service-details.html">Consulting Service</a></h4>
